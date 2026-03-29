@@ -17,7 +17,6 @@ let tries = 0;
 
 const port = 3500
 
-// Words from completed rounds only (avoid leaking current-round guesses to later players).
 let previousWords = [];
 let currentWords = [];
 
