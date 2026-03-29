@@ -2,7 +2,9 @@
 
 A WebSocket-based game where multiple AI models compete to guess the same word.
 
-[View the web demo](https://github.com/ItsHotdogFred/website-ai-arena)
+[View the web demo](https://gtw.itsfred.dev/)
+
+[View the web demo repo](https://github.com/ItsHotdogFred/website-ai-arena)
 
 ## Overview
 
