@@ -72,7 +72,11 @@ async function saveRoundToDatabase(gameId, gameNumber, model1, model2, theme, ro
 const group = new Map()
 
 async function getRandomPrerecordedGame() {
-    const { data: completedGames } = await supabase.from("rounds").select("game_id").eq("matched", true);
+    const { data: completedGames } = await supabase
+        .from("rounds")
+        .select("game_id")
+        .eq("matched", true)
+        .gt("round_number", 1);
     const uniqueGameIds = [...new Set((completedGames ?? []).map(row => row.game_id).filter(Boolean))];
     if (uniqueGameIds.length === 0) return null;
 
