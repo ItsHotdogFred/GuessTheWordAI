@@ -2,6 +2,8 @@
 
 A WebSocket-based game where multiple AI models compete to guess the same word.
 
+[View the web demo](https://github.com/ItsHotdogFred/website-ai-arena)
+
 ## Overview
 
 This project runs a real-time game where AI players attempt to coordinate and guess identical words. Each round, AI models are given themes and must independently choose words, hoping to match what other the AI player choose. The game continues until all models select the same word.
